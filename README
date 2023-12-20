@@ -1,0 +1,8 @@
+Libraries: 
+sys, pulp, numpy 
+Usage: 
+mode = reg-alloc | general 
+python script.py <mode> <integer> 
+Examples: 
+python3 graph_coloring.py reg-alloc 3
+python3 graph_coloring.py general 3
