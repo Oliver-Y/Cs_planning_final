@@ -79,7 +79,7 @@ def solve_graph(num_colors):
             #Make sure pair i,j are not the same colors 
             for c in colors: 
                 lp += xij[k.name][c] + xij[j.name][c] <= 1
-    #TODO: Something to relate x and w 
+    #If a node doesn't have a color, the color could be active or inactive. If a node has a color, the color has to be active. 
     for i in nodes: 
         for c in colors: 
             lp += xij[i][c] <= wj[c]
